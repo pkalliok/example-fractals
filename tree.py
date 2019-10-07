@@ -13,3 +13,12 @@ def tree(minl, length):
     lt(50)
     bk(length)
 
+def spi(minl, ang, length):
+    if length < minl:
+        return
+    fd(length)
+    rt(ang)
+    spi(minl, ang, length - minl)
+    lt(ang)
+    bk(length)
+
